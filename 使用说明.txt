@@ -1,0 +1,21 @@
+组件文件: mytoast.vue
+注册文件: store.js
+图标文件: 可以自己手动添加图片
+
+// 在使用时引入文件
+import xx from "xx/mytoast.vue"
+
+// 写上组件
+<mytoast></mytoast>
+
+//方法里面调用
+this.$myToast()
+
+传入参数
+{
+text:'提示文字',
+icon:'编写好的图标名称',
+duration:1500(默认),
+load(是否为加载. true则需手动关闭toast),
+}
+(关闭toast, 只需提交this.$store.commit("hideToast"))
